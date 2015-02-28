@@ -14,6 +14,7 @@ Cu.import("resource://noscript_@VERSION@/modules/Sites.jsm");
 Cu.import("resource://noscript_@VERSION@/modules/IPC.jsm");
 Cu.import("resource://noscript_@VERSION@/modules/Load.jsm");
 Cu.import("resource://noscript_@VERSION@/modules/Var.jsm");
+Cu.import("resource://noscript_@VERSION@/modules/Thread.jsm");
 
 for each(let name in ["Placeholder", "RequestWatchdog", "ABE", "PageMod", "ScriptSurrogate", "IOUtil", "XSSFilter"])
   XPCOMUtils.defineLazyModuleGetter(this, name, "resource://noscript_@VERSION@/modules/" + name + ".jsm")
